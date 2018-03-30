@@ -4,5 +4,5 @@ var sendJSONresponse = function(res, status, content) {
 };
 
 module.exports.index = function(req, res) {
-  res.render('index', { title: 'Tmp Express!!!' });
+  sendJSONresponse(res, 200, { status: 'success' });
 };
