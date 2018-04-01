@@ -26,7 +26,6 @@ module.exports.vacations = function (req, res) {
                 }
             })
         };
-        console.log(context);
-        res.render('vacations', context);
+        sendJSONresponse(res, 200, context);
     });
 };
