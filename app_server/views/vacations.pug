@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  h1 Vacations
+  each val in vacations
+    h3= val.name
+    p= val.description
