@@ -1,6 +1,7 @@
 extends layout
-
+ 
 block content
   h1= title
   p Welcome to #{title}
-  p=body
+  each val in body1.vacations
+    p=val.name
